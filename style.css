@@ -1,0 +1,84 @@
+*{
+    display: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    background-color: tomato;    
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    margin-left: 90px;
+    color: aliceblue;
+}
+ul{
+    display: flex;
+    padding: 30px;
+    margin-right: 40px;
+    list-style: none;
+}
+li{    }
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    margin: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+@media screen and (min-width: 250px) and (max-width: 721px) {
+    header{
+        display: block;
+        max-width: 100%;
+        text-align: center;
+    }
+    h1{
+        padding: 20px;
+        margin-left: 5px;
+        margin-bottom: -15px;
+    }
+    .container{
+        display: block;
+        margin-left: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .item{
+        flex: 1 1 200px;
+        padding: 10px;        
+    }
+}
+/* ---------------------*main*------------------ */
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+    color: red;
+    margin-top: 20px;
+}
+.main_container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.main_item{
+    margin: 10px;
+    flex: 1 1 200px;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: red;
+}
+#itens{
+    text-align: justify;
+    /* text-align: center; */
+    padding: 20px;
+    /* line-height: 250px; */
+}
